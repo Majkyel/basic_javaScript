@@ -3,7 +3,7 @@
 // first-button
 var output = document.getElementById('greeter-output');
 
-output.innerHTML = 'Click the button and to convert value' + '<br><br>' + output.innerHTML;
+output.innerHTML = 'Click the button and to convert value';
 
 var button = document.getElementById('greeter-button');
 
@@ -36,7 +36,7 @@ button.addEventListener('click', function () {
 
 // second-button
 var secondOutput = document.getElementById('second-greeter-output');
-secondOutput.innerHTML = 'Click the button and to convert value' + '<br><br>' + secondOutput.innerHTML;
+secondOutput.innerHTML = 'Click the button and to convert value';
 
 var secondButton = document.getElementById('second-greeter-button');
 
@@ -49,11 +49,11 @@ secondButton.addEventListener('click', function () {
     var secondCelsius = (secondFharenheit - 32) / 1.8;
 
     if (secondFharenheit <= 32) {
-        secondOutput.innerHTML = ' At this temperature the water freezes.' + '<br><br>' + output.innerHTML;
+        secondOutput.innerHTML = ' At this temperature the water freezes.' + '<br><br>' + secondOutput.innerHTML;
     } else if (secondFharenheit > 32 && secondFharenheit < 194) {
-        secondOutput.innerHTML = ' At this temperature the water is liquid phase.' + '<br><br>' + output.innerHTML;
+        secondOutput.innerHTML = ' At this temperature the water is liquid phase.' + '<br><br>' + secondOutput.innerHTML;
     } else if (secondFharenheit >= 194) {
-        secondOutput.innerHTML = ' The water is to remoulding to steam.' + '<br><br>' + output.innerHTML;
+        secondOutput.innerHTML = ' The water is to remoulding to steam.' + '<br><br>' + secondOutput.innerHTML;
     }
 
     if (secondFharenheit) {
